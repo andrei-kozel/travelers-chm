@@ -2,21 +2,21 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-#container {
+.container {
   /* border: 1px solid grey;
   height: 600px; */
-  width: 960px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 /* HEADER */
 
 #header {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
+  padding: 20px 0;
 }
 
 #logo a {
@@ -34,7 +34,6 @@ body {
   display: flex;
   list-style-type: none;
   margin: 0;
-  margin-top: 20px;
   padding: 0;
 }
 
@@ -62,4 +61,59 @@ body {
 
 #main-menu ul li:hover a::after {
   width: 100%;
+}
+
+/* FOOTER */
+
+#footer {
+  background-color: #1d3557;
+  color: #f1faee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* WELCOME SCREEN */
+
+#welcome-screen #content {
+  margin-top: -70px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#welcome-screen span {
+  font-size: 14px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #a8dadc;
+}
+
+#welcome-screen h1 {
+  color: #1d3557;
+  margin: 0;
+}
+
+#welcome-screen p {
+  color: #1d3557;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+#mountains-image {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(94% 0, 60% 100%, 20% 100%, 84% 0);
+  z-index: -1;
+}
+
+#traveler-image {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(48% 0, 100% 68%, 100% 100%, 63% 100%, 40% 0);
+  z-index: -1;
 }
